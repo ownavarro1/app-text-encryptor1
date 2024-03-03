@@ -2,7 +2,7 @@ const textArea =  document.querySelector(".text-area");
 const mensaje =  document.querySelector(".mensaje");
 
 function validarTexto(){
-    let validador = textArea.match(/^[a-z]*$/);
+    let validador = textArea.value.match(/^[a-z]*$/);
     if(!validador || validador === 0) {
         alert("Solo son permitidas letras minúsculas y sin acentos")
         location.reload();
